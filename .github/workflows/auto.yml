@@ -1,0 +1,28 @@
+name: run main.py
+
+on:
+  schedule:
+    - cron: '30 23 * * *' # At 5 am(Ist)  on Every day
+    
+  workflow_dispatch:
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: checkout repo content
+        uses: actions/checkout@v2 # checkout the repository content
+
+      - name: setup python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.11' # install the python version needed
+
+      - name: install python packages
+        run: |
+          python -m pip install --upgrade pip
+
+      - name: execute py script # run main.py
+        env: 
+          INSTA_USER: ${{ secrets.INSTA_USER }}
+          INSTA_PASSWORD: ${{ secrets.INSTA_PASSWORD }}
+        run: python main.py
