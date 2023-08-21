@@ -1,5 +1,5 @@
 from md2 import MD
 
-name = MD
+md = MD
 print("hello")
-print(name)
+print(md.name)
