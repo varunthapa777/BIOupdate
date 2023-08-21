@@ -1,4 +1,4 @@
-import MD from mod2
+from md2 import MD
 
 name = MD
 print("hello")
