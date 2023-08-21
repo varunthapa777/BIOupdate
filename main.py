@@ -13,7 +13,7 @@ today = WEEKDAY()
 qt = Quote()
 quote_of_the_day = today.get_day()+qt.get_quote()
 cl = instagrapi.Client()
-cl.login(username=USERNAME, password=PASSWORD)
+cl.login(username=USERNAME, password=PASSWORD, verification_code="224295")
 
 notes = cl.get_notes()
 
