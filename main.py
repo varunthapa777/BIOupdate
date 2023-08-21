@@ -4,8 +4,8 @@ from quotes import Quote
 from weekday import WEEKDAY
 import os
 
-# USERNAME = os.environ["INSTA_USER"]
-# PASSWORD = os.environ["INSTA_PASSWORD"]
+USERNAME = os.environ["INSTA_USER"]
+PASSWORD = os.environ["INSTA_PASSWORD"]
 
 
 today = WEEKDAY()
