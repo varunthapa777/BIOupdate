@@ -4,8 +4,8 @@ from quotes import Quote
 from weekday import WEEKDAY
 import os
 
-USERNAME = os.environ["INSTA_USER"]
-PASSWORD = os.environ["INSTA_PASSWORD"]
+# USERNAME = os.environ["INSTA_USER"]
+# PASSWORD = os.environ["INSTA_PASSWORD"]
 
 
 today = WEEKDAY()
@@ -13,7 +13,7 @@ today = WEEKDAY()
 qt = Quote()
 quote_of_the_day = today.get_day()+qt.get_quote()
 cl = instagrapi.Client()
-cl.login(username=USERNAME, password=PASSWORD)
+cl.login(username="ig_varunthapa", password="VvAaRrUuNn12")
 
 notes = cl.get_notes()
 
