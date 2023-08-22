@@ -3,7 +3,7 @@ import random
 import pytz
 
 emojies = ["😁", "😉", "😋", "😙", "🥱", "🫠", "🫤", "🦊", "😺", "😸", "🦁", "🐼", "😜", "😌", "😶‍🌫️", "😤", "😼", "🐣", "🐧", "🦋", "🫰",
-           "🤞", "✌️", "🫶", "✨"]
+           "🤞", "✌️", "🫶", "✨","🤗","🍂","🌼","🌸","🥀","🍻","🍫","🍬","☮️","🇮🇳"]
 
 
 class WEEKDAY:
@@ -18,7 +18,7 @@ class WEEKDAY:
             case 0:
                 return "Monday" + emoji + "\n"
             case 1:
-                return "Tuesday" + emoji + "\n"
+                return "Tuesday" + "🚩" + "\n"
             case 2:
                 return "Wednesday" + emoji + "\n"
             case 3:
@@ -26,7 +26,7 @@ class WEEKDAY:
             case 4:
                 return "Friday" + emoji + "\n"
             case 5:
-                return "Saturday" + emoji + "\n"
+                return "Saturday" + "🕉️" + "\n"
             case 6:
                 return "Sunday" + emoji + "\n"
             case _:
