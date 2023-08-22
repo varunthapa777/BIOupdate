@@ -1,5 +1,6 @@
 import datetime as dt
 import random
+import pytz
 
 emojies = ["😁", "😉", "😋", "😙", "🥱", "🫠", "🫤", "🦊", "😺", "😸", "🦁", "🐼", "😜", "😌", "😶‍🌫️", "😤", "😼", "🐣", "🐧", "🦋", "🫰",
            "🤞", "✌️", "🫶", "✨"]
@@ -8,7 +9,7 @@ emojies = ["😁", "😉", "😋", "😙", "🥱", "🫠", "🫤", "🦊", "😺
 class WEEKDAY:
 
     def __init__(self):
-        self.now = dt.datetime.now()
+        self.now = dt.datetime.now(pytz.timezone("Asia/Kolkata"))
 
     def get_day(self):
         emoji = random.choice(emojies)
