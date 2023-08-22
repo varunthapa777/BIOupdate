@@ -13,9 +13,9 @@ class WEEKDAY:
     def get_day(self):
         emoji = random.choice(emojies)
         match (self.now.weekday()):
-            case 1:
+            case 0:
                 return "Monday" + emoji + "\n"
-            case 2:
+            case 1:
                 return "Tuesday" + emoji + "\n"
             case 3:
                 return "Wednesday" + emoji + "\n"
@@ -25,7 +25,7 @@ class WEEKDAY:
                 return "Friday" + emoji + "\n"
             case 6:
                 return "Saturday" + emoji + "\n"
-            case 0:
+            case 2:
                 return "Sunday" + emoji + "\n"
             case _:
                 return ""
