@@ -24,7 +24,7 @@ class Quote:
 
     def get_quote(self):
         new_pick = self.pick_quote()
-        formatted_quote = new_pick["quote"]+" -"+new_pick["author"]
+        formatted_quote = new_pick["quote"]
 
         return formatted_quote
 
